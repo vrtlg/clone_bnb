@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Listing</th>
       <th>Start date</th>
       <th>End date</th>
       <th>Guest</th>
@@ -15,6 +16,7 @@
   <tbody>
     <% @bookings.each do |booking| %>
       <tr>
+        <td><%= booking.listing_id %></td>
         <td><%= booking.start_date %></td>
         <td><%= booking.end_date %></td>
         <td><%= booking.guest_id %></td>
