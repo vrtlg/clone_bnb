@@ -1,0 +1,9 @@
+<h1>People</h1>
+<h3><%= link_to "Guests", guests_path %></h3>
+<% @guests.each do |guest| %>
+<%= render 'layouts/show-sm', person: guest %>
+<% end %>
+<h3><%= link_to "Hosts", hosts_path %></h3>
+<% @hosts.each do |host| %>
+<%= render 'layouts/show-sm', person: host %>
+<% end %>
